@@ -21,10 +21,11 @@ html {
 }
 
 body {
-  background: var(--color-background-light);
+  background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-family-text);
   font-size: var(--font-size-regular);
+  letter-spacing: var(--tracking-wide);
 }
 
 footer,
@@ -46,7 +47,7 @@ button {
   color: inherit;
   cursor: pointer;
   font: inherit;
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -83,20 +84,28 @@ button,
 
 h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: var(--font-family-title);
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: var(--tracking-x-wide);
   line-height: 1.25;
-
-  &.display {
-    font-family: var(--font-family-display);
-    font-weight: 700;
-  }
 }
-h1 { font-size: var(--font-size-huge); line-height: 1.125 !important; }
+h1 {
+  font-size: var(--font-size-huge);
+  line-height: 1.125;
+}
 h2 { font-size: var(--font-size-xxx-large); }
-h3 { font-size: var(--font-size-xx-large); }
+h3 {
+  font-size: var(--font-size-xx-large);
+  font-weight: 800;
+}
 h4 { font-size: var(--font-size-x-large); }
-h5 { font-size: var(--font-size-large); }
-h6 { font-size: var(--font-size-regular); }
+h5 { font-size: var(--font-size-regular); }
+h6 {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-x-small);
+  font-weight: 400;
+  letter-spacing: var(--tracking-xx-wide);
+  text-transform: uppercase;
+}
 
 i,
 .icon {

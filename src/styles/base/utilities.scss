@@ -1,0 +1,25 @@
+.flex { display: flex !important; }
+.flex-column { display: flex !important; flex-direction: column !important; }
+.flex-row { display: flex !important; flex-direction: row !important; }
+
+.gap-0125 { gap: .125rem !important; }
+.gap-025 { gap: .25rem !important; }
+.gap-0375 { gap: .375rem !important; }
+.gap-05 { gap: .5rem !important; }
+.gap-075 { gap: .75rem !important; }
+.gap-1 { gap: 1rem !important; }
+.gap-125 { gap: 1.25rem !important; }
+.gap-15 { gap: 1.5rem !important; }
+.gap-175 { gap: 1.75rem !important; }
+.gap-2 { gap: 2rem !important; }
+.gap-225 { gap: 2.25rem !important; }
+.gap-25 { gap: 2.5rem !important; }
+.gap-275 { gap: 2.75rem !important; }
+.gap-3 { gap: 3rem !important; }
+
+.items-center { align-items: center !important; }
+
+.justify-between { justify-content: space-between !important; }
+.justify-center { justify-content: center !important; }
+.justify-end { justify-content: end !important; }
+.justify-start { justify-content: start !important; }

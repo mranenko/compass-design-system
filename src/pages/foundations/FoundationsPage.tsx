@@ -3,12 +3,15 @@ import "./FoundationsPage.scss";
 import {
   EyebrowTitle,
   Page,
+  TextGroup,
 } from "../../components";
 
 const FoundationsPage = () => {
   return (
     <Page className="foundations-page">
-      <EyebrowTitle eyebrow="Compass Design System" title="Foundations" />
+      <TextGroup>
+        <EyebrowTitle eyebrow="Compass Design System" title="Foundations" />
+      </TextGroup>
     </Page>
   )
 };

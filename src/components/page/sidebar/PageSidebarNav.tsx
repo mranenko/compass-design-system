@@ -2,14 +2,30 @@ import "./PageSidebarNav.scss";
 
 import { NavLink } from "react-router-dom";
 
+import {TextGroup } from "../../../components";
+
 const PageSidebarNav = () => {
   return (
     <>
       <div className="page-sidebar">
         <nav className="page-sidebar-nav">
-          <NavLink className="page-sidebar-nav-link" to="/">Introduction</NavLink>
-          <NavLink className="page-sidebar-nav-link" to="/foundations">Foundations</NavLink>
-          <NavLink className="page-sidebar-nav-link" to="/components">Components</NavLink>
+          <TextGroup>
+            <NavLink className="page-sidebar-nav-link" to="/">
+              <h6>Introduction</h6>
+            </NavLink>
+          </TextGroup>
+
+          <TextGroup>
+            <NavLink className="page-sidebar-nav-link" to="/foundations">
+              <h6>Foundations</h6>
+            </NavLink>
+          </TextGroup>
+
+          <TextGroup>
+            <NavLink className="page-sidebar-nav-link" to="/components">
+              <h6>Components</h6>
+            </NavLink>
+          </TextGroup>
         </nav>
       </div>
     </>
