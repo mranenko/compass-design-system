@@ -1,0 +1,13 @@
+.eyebrow-title {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+
+  .eyebrow {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-x-small);
+    font-weight: 400;
+    letter-spacing: var(--tracking-x-wide);
+    text-transform: uppercase;
+  }
+}

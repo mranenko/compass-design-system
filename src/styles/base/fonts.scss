@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* font families */
+  --font-family-title: "Montserrat Alternates", sans-serif;
+  --font-family-text: "Lexend", sans-serif;
+
+  /* font sizes */
+  --font-size-xx-small: .625rem; /* 10px */
+  --font-size-x-small: .75rem; /* 12px */
+  --font-size-small: .875rem; /* 14px */
+  --font-size-regular: 1rem; /* 16px */
+  --font-size-large: 1.125rem; /* 18px */
+  --font-size-x-large: 1.125rem;
+  --font-size-xx-large: 1.25rem;
+  --font-size-xxx-large: 1.75rem;
+  --font-size-huge: 2.25rem;
+
+  /* leading / line height */
+  --leading-normal: 1.5;
+  --leading-tight: 1.25;
+  --leading-x-tight: 1.125;
+  --leading-none: 1;
+
+  /* tracking / letter spacing */
+  --tracking-normal: 0;
+  --tracking-wide: .25px;
+  --tracking-x-wide: .5px;
+}
