@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://compass-design-system.netlify.app/sitemap.xml

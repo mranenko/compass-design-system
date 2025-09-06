@@ -1,15 +1,24 @@
 .page-sidebar {
-  background: var(--color-background-dark);
-  border-right: 1px solid var(--color-border);
-  color: var(--color-foreground);
+  background: var(--color-onyx-140);
+  color: var(--color-quartz-10);
   height: 100vh;
   padding: 2rem;
   position: sticky;
   width: 16rem;
-}
 
-.page-sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  .page-sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .page-sidebar-nav-link {
+    font-size: var(--font-size-small);
+  }
+
+  .page-sidebar-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
 }

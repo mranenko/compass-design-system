@@ -37,3 +37,17 @@ The local app will run on port 2509. This port can be changed in `package.json`.
 ## Design
 
 https://www.figma.com/design/Yxnpa2GlBJdskRWt9ymziZ/Compass-Design-System
+
+---
+
+
+### TODO
+
+- Add opengraph tags
+- Create `agents.txt`
+
+(DONE)
+
+- Add meta description
+- Create `robots.txt`
+- Create `sitemap.xml`

@@ -2,30 +2,49 @@ import "./PageSidebarNav.scss";
 
 import { NavLink } from "react-router-dom";
 
-import {TextGroup } from "../../../components";
-
 const PageSidebarNav = () => {
   return (
     <>
       <div className="page-sidebar">
         <nav className="page-sidebar-nav">
-          <TextGroup>
+          <div className="flex-column gap-1">
             <NavLink className="page-sidebar-nav-link" to="/">
               <h6>Introduction</h6>
             </NavLink>
-          </TextGroup>
+          </div>
 
-          <TextGroup>
-            <NavLink className="page-sidebar-nav-link" to="/foundations">
+          <div className="flex-column gap-1">
+            <NavLink title="Foundations" to="/foundations">
               <h6>Foundations</h6>
             </NavLink>
-          </TextGroup>
 
-          <TextGroup>
+            <div className="page-sidebar-nav-links">
+              <NavLink className="page-sidebar-nav-link" title="Colors" to="/foundations">
+                Colors
+              </NavLink>
+              <NavLink className="page-sidebar-nav-link" title="Typography" to="/foundations">
+                Typography
+              </NavLink>
+            </div>
+          </div>
+
+          <div className="flex-column gap-1">
             <NavLink className="page-sidebar-nav-link" to="/components">
               <h6>Components</h6>
             </NavLink>
-          </TextGroup>
+
+            <div className="page-sidebar-nav-links">
+              <NavLink className="page-sidebar-nav-link" title="Alerts" to="/components">
+                Alerts
+              </NavLink>
+              <NavLink className="page-sidebar-nav-link" title="Buttons" to="/components">
+                Buttons
+              </NavLink>
+              <NavLink className="page-sidebar-nav-link" title="Cards" to="/components">
+                Cards
+              </NavLink>
+            </div>
+          </div>
         </nav>
       </div>
     </>
