@@ -1,11 +1,15 @@
-import "./styles/index.scss";
+import "../lib/styles/index.scss";
 
 import { Route, Routes } from "react-router-dom";
 
 import {
+  ColorsPage,
   ComponentsPage,
   DashboardPage,
   FoundationsPage,
+  IconographyPage,
+  TokensPage,
+  TypographyPage,
 } from "./pages";
 
 const App = () => {
@@ -13,8 +17,15 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<DashboardPage />} />
+
         <Route path="/foundations" element={<FoundationsPage />} />
+        <Route path="/foundations/colors" element={<ColorsPage />} />
+        <Route path="/foundations/iconography" element={<IconographyPage />} />
+        <Route path="/foundations/tokens" element={<TokensPage />} />
+        <Route path="/foundations/typography" element={<TypographyPage />} />
+
         <Route path="/components" element={<ComponentsPage />} />
+
         <Route path="*" element={<DashboardPage />} />
       </Routes>
     </>

@@ -19,16 +19,16 @@ const PageSidebarNav = () => {
             </NavLink>
 
             <div className="page-sidebar-nav-links">
-              <NavLink className="page-sidebar-nav-link" title="Colors" to="/foundations">
+              <NavLink className="page-sidebar-nav-link" title="Colors" to="/foundations/colors">
                 └ Colors
               </NavLink>
-              <NavLink className="page-sidebar-nav-link" title="Typography" to="/foundations">
+              <NavLink className="page-sidebar-nav-link" title="Typography" to="/foundations/typography">
                 └ Typography
               </NavLink>
-              <NavLink className="page-sidebar-nav-link" title="TypogIconographyraphy" to="/foundations">
+              <NavLink className="page-sidebar-nav-link" title="TypogIconographyraphy" to="/foundations/iconography">
                 └ Iconography
               </NavLink>
-              <NavLink className="page-sidebar-nav-link" title="Tokens" to="/foundations">
+              <NavLink className="page-sidebar-nav-link" title="Tokens" to="/foundations/tokens">
                 └ Tokens
               </NavLink>
             </div>
