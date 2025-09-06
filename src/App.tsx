@@ -3,6 +3,7 @@ import "../lib/styles/index.scss";
 import { Route, Routes } from "react-router-dom";
 
 import {
+  CardPage,
   ColorsPage,
   ComponentsPage,
   DashboardPage,
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/foundations/typography" element={<TypographyPage />} />
 
         <Route path="/components" element={<ComponentsPage />} />
+        <Route path="/components/cards" element={<CardPage />} />
 
         <Route path="*" element={<DashboardPage />} />
       </Routes>

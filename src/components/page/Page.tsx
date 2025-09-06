@@ -28,7 +28,7 @@ const Page = ({ children, className = "" }: PageProps) => {
       {/* </PageMain>
       <PageFooter /> */}
     </div>
-  )
+  );
 };
 
 export { Page };

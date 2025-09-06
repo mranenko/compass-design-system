@@ -1,3 +1,5 @@
+import { CardPage } from "./components/card/CardPage";
+
 import { ColorsPage } from "./foundations/colors/ColorsPage";
 import { ComponentsPage } from "./components/ComponentsPage";
 import { DashboardPage } from "./dashboard/DashboardPage";
@@ -7,6 +9,7 @@ import { TokensPage } from "./foundations/tokens/TokensPage";
 import { TypographyPage } from "./foundations/typography/TypographyPage";
 
 export {
+  CardPage,
   ColorsPage,
   ComponentsPage,
   DashboardPage,

@@ -46,7 +46,7 @@ const PageSidebarNav = () => {
               <NavLink className="page-sidebar-nav-link" title="Buttons" to="/components">
                 └ Buttons
               </NavLink>
-              <NavLink className="page-sidebar-nav-link" title="Cards" to="/components">
+              <NavLink className="page-sidebar-nav-link" title="Cards" to="/components/cards">
                 └ Cards
               </NavLink>
               <NavLink className="page-sidebar-nav-link" title="Inputs" to="/components">
