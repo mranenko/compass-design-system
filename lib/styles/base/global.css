@@ -25,6 +25,12 @@ body {
   letter-spacing: var(--letter-spacing-regular);
 }
 
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h5 {
   font-family: var(--font-family-title);
 }
