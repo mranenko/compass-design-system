@@ -1,0 +1,10 @@
+.screen-header {
+  align-items: center;
+  background: var(--color-background-neutral-light);
+  border-bottom: 1px solid var(--color-border-neutral);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+}

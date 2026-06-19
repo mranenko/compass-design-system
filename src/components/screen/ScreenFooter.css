@@ -1,0 +1,8 @@
+.screen-footer {
+  background: var(--color-onyx-160);
+  border-top: 1px solid var(--color-border-neutral);
+  color: var(--color-quartz-30);
+  font-size: var(--font-size-small);
+  padding: 2.5rem 2rem;
+  width: 100%;
+}

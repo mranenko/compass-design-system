@@ -1,0 +1,219 @@
+:root {
+  /* base colours */
+  --color-tourmaline: hsl(195 50 28);
+  --color-larimar: hsl(180 22 86);
+  --color-amethyst: hsl(265 30 36);
+  --color-iolite: hsl(235 24 86);
+  --color-onyx: hsl(235 8 20);
+  --color-quartz: hsl(305 5 95);
+  --color-garnet: hsl(345 48 40);
+  --color-emerald: hsl(180 40 28);
+  --color-tanzanite: hsl(220 38 36);
+
+  /* tourmaline variations */
+  --color-tourmaline-10: hsl(from var(--color-tourmaline) h s 98);
+  --color-tourmaline-20: hsl(from var(--color-tourmaline) h s 95);
+  --color-tourmaline-30: hsl(from var(--color-tourmaline) h s 91);
+  --color-tourmaline-40: hsl(from var(--color-tourmaline) h s 86);
+  --color-tourmaline-50: hsl(from var(--color-tourmaline) h s 80);
+  --color-tourmaline-60: hsl(from var(--color-tourmaline) h s 72);
+  --color-tourmaline-70: hsl(from var(--color-tourmaline) h s 64);
+  --color-tourmaline-80: hsl(from var(--color-tourmaline) h s 56);
+  --color-tourmaline-90: hsl(from var(--color-tourmaline) h s 48);
+  --color-tourmaline-100: hsl(from var(--color-tourmaline) h s 44);
+  --color-tourmaline-110: hsl(from var(--color-tourmaline) h s 40);
+  --color-tourmaline-120: hsl(from var(--color-tourmaline) h s 36);
+  --color-tourmaline-130: hsl(from var(--color-tourmaline) h s 32);
+  --color-tourmaline-140: hsl(from var(--color-tourmaline) h s 28); /* base */
+  --color-tourmaline-150: hsl(from var(--color-tourmaline) h s 24);
+  --color-tourmaline-160: hsl(from var(--color-tourmaline) h s 20);
+
+  /* larimar variations */
+  --color-larimar-10: hsl(from var(--color-larimar) h s 98);
+  --color-larimar-20: hsl(from var(--color-larimar) h s 95);
+  --color-larimar-30: hsl(from var(--color-larimar) h s 91);
+  --color-larimar-40: hsl(from var(--color-larimar) h s 86); /* base */
+  --color-larimar-50: hsl(from var(--color-larimar) h s 80);
+  --color-larimar-60: hsl(from var(--color-larimar) h s 72);
+  --color-larimar-70: hsl(from var(--color-larimar) h s 64);
+  --color-larimar-80: hsl(from var(--color-larimar) h s 56);
+  --color-larimar-90: hsl(from var(--color-larimar) h s 48);
+  --color-larimar-100: hsl(from var(--color-larimar) h s 44);
+  --color-larimar-110: hsl(from var(--color-larimar) h s 40);
+  --color-larimar-120: hsl(from var(--color-larimar) h s 36);
+  --color-larimar-130: hsl(from var(--color-larimar) h s 32);
+  --color-larimar-140: hsl(from var(--color-larimar) h s 28);
+  --color-larimar-150: hsl(from var(--color-larimar) h s 24);
+  --color-larimar-160: hsl(from var(--color-larimar) h s 20);
+
+  /* amethyst variations */
+  --color-amethyst-10: hsl(from var(--color-amethyst) h s 98);
+  --color-amethyst-20: hsl(from var(--color-amethyst) h s 95);
+  --color-amethyst-30: hsl(from var(--color-amethyst) h s 91);
+  --color-amethyst-40: hsl(from var(--color-amethyst) h s 86);
+  --color-amethyst-50: hsl(from var(--color-amethyst) h s 80);
+  --color-amethyst-60: hsl(from var(--color-amethyst) h s 72);
+  --color-amethyst-70: hsl(from var(--color-amethyst) h s 64);
+  --color-amethyst-80: hsl(from var(--color-amethyst) h s 56);
+  --color-amethyst-90: hsl(from var(--color-amethyst) h s 48);
+  --color-amethyst-100: hsl(from var(--color-amethyst) h s 44);
+  --color-amethyst-110: hsl(from var(--color-amethyst) h s 40);
+  --color-amethyst-120: hsl(from var(--color-amethyst) h s 36); /* base */
+  --color-amethyst-130: hsl(from var(--color-amethyst) h s 32);
+  --color-amethyst-140: hsl(from var(--color-amethyst) h s 28);
+  --color-amethyst-150: hsl(from var(--color-amethyst) h s 24);
+  --color-amethyst-160: hsl(from var(--color-amethyst) h s 20);
+
+  /* iolite variations */
+  --color-iolite-10: hsl(from var(--color-iolite) h s 98);
+  --color-iolite-20: hsl(from var(--color-iolite) h s 95);
+  --color-iolite-30: hsl(from var(--color-iolite) h s 91);
+  --color-iolite-40: hsl(from var(--color-iolite) h s 86); /* base */
+  --color-iolite-50: hsl(from var(--color-iolite) h s 80);
+  --color-iolite-60: hsl(from var(--color-iolite) h s 72);
+  --color-iolite-70: hsl(from var(--color-iolite) h s 64);
+  --color-iolite-80: hsl(from var(--color-iolite) h s 56);
+  --color-iolite-90: hsl(from var(--color-iolite) h s 48);
+  --color-iolite-100: hsl(from var(--color-iolite) h s 44);
+  --color-iolite-110: hsl(from var(--color-iolite) h s 40);
+  --color-iolite-120: hsl(from var(--color-iolite) h s 36);
+  --color-iolite-130: hsl(from var(--color-iolite) h s 32);
+  --color-iolite-140: hsl(from var(--color-iolite) h s 28);
+  --color-iolite-150: hsl(from var(--color-iolite) h s 24);
+  --color-iolite-160: hsl(from var(--color-iolite) h s 20);
+
+  /* onyx variations */
+  --color-onyx-10: hsl(from var(--color-onyx) h s 98);
+  --color-onyx-20: hsl(from var(--color-onyx) h s 95); /* base */
+  --color-onyx-30: hsl(from var(--color-onyx) h s 91);
+  --color-onyx-40: hsl(from var(--color-onyx) h s 86);
+  --color-onyx-50: hsl(from var(--color-onyx) h s 80);
+  --color-onyx-60: hsl(from var(--color-onyx) h s 72);
+  --color-onyx-70: hsl(from var(--color-onyx) h s 64);
+  --color-onyx-80: hsl(from var(--color-onyx) h s 56);
+  --color-onyx-90: hsl(from var(--color-onyx) h s 48);
+  --color-onyx-100: hsl(from var(--color-onyx) h s 44);
+  --color-onyx-110: hsl(from var(--color-onyx) h s 40);
+  --color-onyx-120: hsl(from var(--color-onyx) h s 36);
+  --color-onyx-130: hsl(from var(--color-onyx) h s 32);
+  --color-onyx-140: hsl(from var(--color-onyx) h s 28);
+  --color-onyx-150: hsl(from var(--color-onyx) h s 24);
+  --color-onyx-160: hsl(from var(--color-onyx) h s 20);
+
+  /* quartz variations */
+  --color-quartz-10: hsl(from var(--color-quartz) h s 98);
+  --color-quartz-20: hsl(from var(--color-quartz) h s 95);
+  --color-quartz-30: hsl(from var(--color-quartz) h s 91);
+  --color-quartz-40: hsl(from var(--color-quartz) h s 86);
+  --color-quartz-50: hsl(from var(--color-quartz) h s 80);
+  --color-quartz-60: hsl(from var(--color-quartz) h s 72);
+  --color-quartz-70: hsl(from var(--color-quartz) h s 64);
+  --color-quartz-80: hsl(from var(--color-quartz) h s 56);
+  --color-quartz-90: hsl(from var(--color-quartz) h s 48);
+  --color-quartz-100: hsl(from var(--color-quartz) h s 44);
+  --color-quartz-110: hsl(from var(--color-quartz) h s 40);
+  --color-quartz-120: hsl(from var(--color-quartz) h s 36);
+  --color-quartz-130: hsl(from var(--color-quartz) h s 32);
+  --color-quartz-140: hsl(from var(--color-quartz) h s 28);
+  --color-quartz-150: hsl(from var(--color-quartz) h s 24);
+  --color-quartz-160: hsl(from var(--color-quartz) h s 20); /* base */
+
+  /* garnet variations (danger) */
+  --color-garnet-10: hsl(from var(--color-garnet) h s 98);
+  --color-garnet-20: hsl(from var(--color-garnet) h s 95);
+  --color-garnet-30: hsl(from var(--color-garnet) h s 91);
+  --color-garnet-40: hsl(from var(--color-garnet) h s 86);
+  --color-garnet-50: hsl(from var(--color-garnet) h s 80);
+  --color-garnet-60: hsl(from var(--color-garnet) h s 72);
+  --color-garnet-70: hsl(from var(--color-garnet) h s 64);
+  --color-garnet-80: hsl(from var(--color-garnet) h s 56);
+  --color-garnet-90: hsl(from var(--color-garnet) h s 48);
+  --color-garnet-100: hsl(from var(--color-garnet) h s 44);
+  --color-garnet-110: hsl(from var(--color-garnet) h s 40); /* base */
+  --color-garnet-120: hsl(from var(--color-garnet) h s 36);
+  --color-garnet-130: hsl(from var(--color-garnet) h s 32);
+  --color-garnet-140: hsl(from var(--color-garnet) h s 28);
+  --color-garnet-150: hsl(from var(--color-garnet) h s 24);
+  --color-garnet-160: hsl(from var(--color-garnet) h s 20);
+
+  /* emerald variations (success) */
+  --color-emerald-10: hsl(from var(--color-emerald) h s 98);
+  --color-emerald-20: hsl(from var(--color-emerald) h s 95);
+  --color-emerald-30: hsl(from var(--color-emerald) h s 91);
+  --color-emerald-40: hsl(from var(--color-emerald) h s 86);
+  --color-emerald-50: hsl(from var(--color-emerald) h s 80);
+  --color-emerald-60: hsl(from var(--color-emerald) h s 72);
+  --color-emerald-70: hsl(from var(--color-emerald) h s 64);
+  --color-emerald-80: hsl(from var(--color-emerald) h s 56);
+  --color-emerald-90: hsl(from var(--color-emerald) h s 48);
+  --color-emerald-100: hsl(from var(--color-emerald) h s 44);
+  --color-emerald-110: hsl(from var(--color-emerald) h s 40);
+  --color-emerald-120: hsl(from var(--color-emerald) h s 36);
+  --color-emerald-130: hsl(from var(--color-emerald) h s 32);
+  --color-emerald-140: hsl(from var(--color-emerald) h s 28); /* base */
+  --color-emerald-150: hsl(from var(--color-emerald) h s 24);
+  --color-emerald-160: hsl(from var(--color-emerald) h s 20);
+
+  /* tanzanite variations (info) */
+  --color-tanzanite-10: hsl(from var(--color-tanzanite) h s 98);
+  --color-tanzanite-20: hsl(from var(--color-tanzanite) h s 95);
+  --color-tanzanite-30: hsl(from var(--color-tanzanite) h s 91);
+  --color-tanzanite-40: hsl(from var(--color-tanzanite) h s 86);
+  --color-tanzanite-50: hsl(from var(--color-tanzanite) h s 80);
+  --color-tanzanite-60: hsl(from var(--color-tanzanite) h s 72);
+  --color-tanzanite-70: hsl(from var(--color-tanzanite) h s 64);
+  --color-tanzanite-80: hsl(from var(--color-tanzanite) h s 56);
+  --color-tanzanite-90: hsl(from var(--color-tanzanite) h s 48);
+  --color-tanzanite-100: hsl(from var(--color-tanzanite) h s 44);
+  --color-tanzanite-110: hsl(from var(--color-tanzanite) h s 40);
+  --color-tanzanite-120: hsl(from var(--color-tanzanite) h s 36); /* base */
+  --color-tanzanite-130: hsl(from var(--color-tanzanite) h s 32);
+  --color-tanzanite-140: hsl(from var(--color-tanzanite) h s 28);
+  --color-tanzanite-150: hsl(from var(--color-tanzanite) h s 24);
+  --color-tanzanite-160: hsl(from var(--color-tanzanite) h s 20);
+}
+
+
+/*
+  themes (tourmaline/amethyst) and modes (light/dark)
+
+  Mode is driven by color-scheme + light-dark(): the default follows the OS,
+  and data-mode overrides it. Theme (tourmaline default / amethyst) only swaps
+  the accent pair.
+*/
+
+:root,
+[data-theme="tourmaline"] {
+  color-scheme: light dark;
+
+  --color-background-neutral-light: light-dark(var(--color-quartz-10), var(--color-onyx-140));
+  --color-background-neutral-default: light-dark(var(--color-quartz-20), var(--color-onyx-150));
+  --color-background-neutral-dark: light-dark(var(--color-quartz-30), var(--color-onyx-160));
+  --color-border-neutral: light-dark(var(--color-quartz-40), var(--color-onyx-130));
+
+  --color-foreground-strong: light-dark(var(--color-onyx-160), var(--color-quartz-10));
+  --color-foreground-default: light-dark(var(--color-onyx-140), var(--color-quartz-30));
+  --color-foreground-subtle: light-dark(var(--color-onyx-110), var(--color-quartz-50));
+  --color-foreground-contrast-strong: light-dark(var(--color-quartz-10), var(--color-onyx-160));
+  --color-foreground-contrast-default: light-dark(var(--color-quartz-30), var(--color-onyx-140));
+  --color-foreground-contrast-subtle: light-dark(var(--color-quartz-50), var(--color-onyx-110));
+
+  /* status */
+  --color-danger: light-dark(var(--color-garnet-110), var(--color-garnet-50));
+  --color-success: light-dark(var(--color-emerald-140), var(--color-emerald-60));
+  --color-info: light-dark(var(--color-tanzanite-120), var(--color-tanzanite-50));
+
+  /* tourmaline theme (default) */
+  --color-primary: light-dark(var(--color-tourmaline-140), var(--color-tourmaline-50));
+  --color-secondary: light-dark(var(--color-larimar-40), var(--color-larimar-120));
+}
+
+/* explicit mode override flips color-scheme; light-dark() re-resolves */
+[data-mode="light"] { color-scheme: light; }
+[data-mode="dark"] { color-scheme: dark; }
+
+/* theme override only swaps the accent pair */
+[data-theme="amethyst"] {
+  --color-primary: light-dark(var(--color-amethyst-120), var(--color-amethyst-50));
+  --color-secondary: light-dark(var(--color-iolite-40), var(--color-iolite-100));
+}

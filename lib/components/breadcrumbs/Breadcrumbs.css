@@ -1,0 +1,40 @@
+.breadcrumbs {
+  font-size: .875rem;
+}
+
+.breadcrumbs-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  align-items: center;
+  display: flex;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  color: var(--color-foreground-subtle);
+  content: "/";
+  margin: 0 .5rem;
+}
+
+.breadcrumbs-link {
+  color: var(--color-foreground-subtle);
+  text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  color: var(--color-foreground-default);
+  text-decoration: underline;
+}
+
+.breadcrumbs-label {
+  color: var(--color-foreground-subtle);
+}
+
+.breadcrumbs-current {
+  color: var(--color-foreground-default);
+  font-weight: 600;
+}

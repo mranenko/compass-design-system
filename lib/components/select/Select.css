@@ -1,0 +1,27 @@
+.select {
+  display: inline-flex;
+  position: relative;
+}
+
+.select-input {
+  appearance: none;
+  background: var(--color-background-neutral-light);
+  border: 1px solid var(--color-border-neutral);
+  border-radius: 1.625rem;
+  color: var(--color-foreground-strong);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  /* extra right padding leaves room for the custom caret */
+  padding: .75rem 2.75rem .75rem 1.5rem;
+  width: 100%;
+}
+
+.select-caret {
+  color: var(--color-foreground-strong);
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

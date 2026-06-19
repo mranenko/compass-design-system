@@ -1,0 +1,16 @@
+.theme-mode-toggle {
+  align-items: center;
+  background: var(--color-secondary);
+  border: 0;
+  border-radius: 50%;
+  color: var(--color-foreground-strong);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 600;
+  gap: .5rem;
+  justify-content: center;
+  height: 3.25rem;
+  padding: .75rem;
+  width: 3.25rem;
+}

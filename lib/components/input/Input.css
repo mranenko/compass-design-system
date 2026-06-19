@@ -1,0 +1,18 @@
+.input {
+  background: var(--color-background-neutral-light);
+  border: 1px solid var(--color-border-neutral);
+  border-radius: 1.625rem;
+  color: var(--color-foreground-strong);
+  font: inherit;
+  height: 3.25rem;
+  padding: .75rem 1.5rem;
+}
+
+.input::placeholder {
+  color: var(--color-foreground-subtle);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}

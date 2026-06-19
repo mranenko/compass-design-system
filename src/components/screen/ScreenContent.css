@@ -1,0 +1,8 @@
+.screen-content {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem 2.5rem;
+  width: 100%;
+}

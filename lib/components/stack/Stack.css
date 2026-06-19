@@ -1,0 +1,37 @@
+.stack {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.stack.align-center { align-items: center; }
+.stack.align-end { align-items: end; }
+.stack.align-space-between { align-items: space-between; }
+.stack.align-start { align-items: start; }
+.stack.align-stretch { align-items: stretch; }
+
+.stack.flex-column { flex-direction: column; }
+.stack.flex-row { flex-direction: row; }
+
+.stack.gap-0125 { gap: .125rem; } /* 2px */
+.stack.gap-025 { gap: .25rem; } /* 4px */
+.stack.gap-0375 { gap: .375rem; } /* 6px */
+.stack.gap-05 { gap: .5rem; } /* 8px */
+.stack.gap-0625 { gap: .625rem; } /* 10px */
+.stack.gap-075 { gap: .75rem; } /* 12px */
+.stack.gap-075 { gap: .875rem; } /* 14px */
+.stack.gap-1 { gap: 1rem; } /* 16px */
+.stack.gap-1125 { gap: 1.125rem; } /* 18px */
+.stack.gap-125 { gap: 1.25rem; } /* 20px */
+.stack.gap-15 { gap: 1.5rem; } /* 24px */
+.stack.gap-175 { gap: 1.75rem; } /* 28px */
+.stack.gap-2 { gap: 2rem; } /* 32px */
+.stack.gap-225 { gap: 2.25rem; } /* 36px */
+.stack.gap-25 { gap: 2.5rem; } /* 40px */
+
+.stack.justify-center { justify-content: center; }
+.stack.justify-end { justify-content: end; }
+.stack.justify-space-between { justify-content: space-between; }
+.stack.justify-start { justify-content: start; }
+.stack.justify-stretch { justify-content: stretch; }

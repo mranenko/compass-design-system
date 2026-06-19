@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+html {
+  font: 400 16px sans-serif;
+}
+
+body {
+  background: var(--color-background-neutral-default);
+  color: var(--color-foreground-default);
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-regular);
+  letter-spacing: var(--letter-spacing-regular);
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-family: var(--font-family-title);
+}

@@ -1,0 +1,49 @@
+.toggle {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  gap: .5rem;
+}
+
+.toggle-input {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.toggle-track {
+  background: var(--color-background-neutral-dark);
+  border-radius: 1rem;
+  display: inline-flex;
+  height: 1.75rem;
+  padding: .25rem;
+  transition: background .15s;
+  width: 3rem;
+}
+
+.toggle-thumb {
+  background: var(--color-background-neutral-light);
+  border-radius: 50%;
+  height: 1.25rem;
+  transition: transform .15s;
+  width: 1.25rem;
+}
+
+.toggle-input:checked + .toggle-track {
+  background: var(--color-primary);
+}
+
+.toggle-input:checked + .toggle-track .toggle-thumb {
+  transform: translateX(1.25rem);
+}
+
+.toggle-input:focus-visible + .toggle-track {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.toggle-input:disabled + .toggle-track {
+  cursor: not-allowed;
+  opacity: .5;
+}

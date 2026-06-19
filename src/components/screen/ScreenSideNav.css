@@ -1,0 +1,25 @@
+.screen-side-nav {
+  border-right: 1px solid var(--color-border-neutral);
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  min-width: 15rem;
+  padding: 1.5rem;
+}
+
+.screen-side-nav-link {
+  border-radius: .5rem;
+  color: var(--color-foreground-default);
+  padding: .5rem .75rem;
+  text-decoration: none;
+}
+
+.screen-side-nav-link:hover {
+  background: var(--color-background-neutral-dark);
+}
+
+.screen-side-nav-link.active {
+  background: var(--color-background-neutral-dark);
+  color: var(--color-foreground-strong);
+  font-weight: 600;
+}
