@@ -8,6 +8,8 @@
 .screen-body {
   display: flex;
   flex: 1;
+  /* Clip the side nav while it is slid off-screen, without creating a scroll container. */
+  overflow-x: clip;
   width: 100%;
 }
 

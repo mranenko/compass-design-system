@@ -1,9 +1,15 @@
 import { NavLink } from "react-router-dom";
+import { useScreenSideNav } from "./ScreenSideNavContext";
 import "./ScreenSideNav.css";
 
 const ScreenSideNav = () => {
+  const { isSideNavOpen } = useScreenSideNav();
+
   return (
-    <nav className="screen-side-nav">
+    <nav
+      className={`screen-side-nav ${isSideNavOpen ? "" : "screen-side-nav--closed"}`}
+      inert={!isSideNavOpen}
+    >
       <NavLink to="/" end className="screen-side-nav-link">Dashboard</NavLink>
 
       <h6 className="screen-side-nav-section-title">Components</h6>

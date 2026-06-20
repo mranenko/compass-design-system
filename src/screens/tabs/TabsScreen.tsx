@@ -66,7 +66,7 @@ const TabsScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabContent active={activeTab === "Examples"}>
+        <TabContent active={activeTab === "Examples"} padding="0">
           <TabGroup>
             {tabs.map((tab) => (
               <Tab
@@ -86,7 +86,7 @@ const TabsScreen = () => {
           ))}
         </TabContent>
 
-        <TabContent active={activeTab === "Code"}>
+        <TabContent active={activeTab === "Code"} padding="0">
           <CodeBlock>{code}</CodeBlock>
         </TabContent>
       </ScreenContent>

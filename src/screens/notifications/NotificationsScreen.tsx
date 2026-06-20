@@ -53,7 +53,7 @@ const NotificationsScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabContent active={activeTab === "Examples"}>
+        <TabContent active={activeTab === "Examples"} padding="0">
           <Stack direction="column" gap="1" width="full">
             <Notification title="Heads up">
               A default notification uses a neutral border.
@@ -70,7 +70,7 @@ const NotificationsScreen = () => {
           </Stack>
         </TabContent>
 
-        <TabContent active={activeTab === "Code"}>
+        <TabContent active={activeTab === "Code"} padding="0">
           <CodeBlock>{code}</CodeBlock>
         </TabContent>
       </ScreenContent>

@@ -59,7 +59,7 @@ const CardsScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabContent active={activeTab === "Examples"}>
+        <TabContent active={activeTab === "Examples"} padding="0">
           <div className="cards-screen-grid">
             <Stack gap="1">
               <Card>
@@ -84,7 +84,7 @@ const CardsScreen = () => {
           </div>
         </TabContent>
 
-        <TabContent active={activeTab === "Code"}>
+        <TabContent active={activeTab === "Code"} padding="0">
           <CodeBlock>{code}</CodeBlock>
         </TabContent>
       </ScreenContent>

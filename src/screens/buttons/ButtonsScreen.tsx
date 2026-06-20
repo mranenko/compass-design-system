@@ -44,7 +44,7 @@ const ButtonsScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabContent active={activeTab === "Examples"}>
+        <TabContent active={activeTab === "Examples"} padding="0">
           <Stack direction="row" gap="1">
             <Button>Default button</Button>
             <Button background="primary">Primary button</Button>
@@ -52,7 +52,7 @@ const ButtonsScreen = () => {
           </Stack>
         </TabContent>
 
-        <TabContent active={activeTab === "Code"}>
+        <TabContent active={activeTab === "Code"} padding="0">
           <CodeBlock>{code}</CodeBlock>
         </TabContent>
       </ScreenContent>

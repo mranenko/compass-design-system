@@ -2,10 +2,24 @@
   border-right: 1px solid var(--color-border-neutral);
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   font-size: var(--font-size-small);
   gap: .25rem;
-  min-width: 15rem;
+  margin-left: 0;
   padding: 1.5rem 2rem;
+  transition: margin-left .25s ease;
+  width: 15rem;
+}
+
+/* Slide the nav out to the left; the negative margin reclaims the space. */
+.screen-side-nav--closed {
+  margin-left: -15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .screen-side-nav {
+    transition: none;
+  }
 }
 
 .screen-side-nav-link {

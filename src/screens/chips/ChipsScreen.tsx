@@ -47,7 +47,7 @@ const ChipsScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabContent active={activeTab === "Examples"}>
+        <TabContent active={activeTab === "Examples"} padding="0">
           <Stack direction="row" gap="0375">
             <Chip>Default</Chip>
             <Chip color="primary">Primary</Chip>
@@ -58,7 +58,7 @@ const ChipsScreen = () => {
           </Stack>
         </TabContent>
 
-        <TabContent active={activeTab === "Code"}>
+        <TabContent active={activeTab === "Code"} padding="0">
           <CodeBlock>{code}</CodeBlock>
         </TabContent>
       </ScreenContent>

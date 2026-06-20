@@ -3,8 +3,18 @@
   background: var(--color-background-neutral-light);
   border-bottom: 1px solid var(--color-border-neutral);
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: .5rem;
   justify-content: space-between;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 100;
+}
+
+@media (min-width: 36rem) {
+  .screen-header {
+    flex-direction: row;
+  }
 }

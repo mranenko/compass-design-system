@@ -13,7 +13,7 @@ const ScreenHeader = () => {
         <h3>Compass Design System</h3>
       </NavLink>
 
-      <Stack direction="row" gap="1">
+      <Stack direction="row" gap="05">
         <ThemeSelect />
         <ThemeModeToggle />
       </Stack>

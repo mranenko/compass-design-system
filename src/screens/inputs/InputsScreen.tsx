@@ -44,7 +44,7 @@ const InputsScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabContent active={activeTab === "Examples"}>
+        <TabContent active={activeTab === "Examples"} padding="0">
           <Stack direction="row" gap="1">
             <Input placeholder="Placeholder" />
             <Input defaultValue="With a value" />
@@ -52,7 +52,7 @@ const InputsScreen = () => {
           </Stack>
         </TabContent>
 
-        <TabContent active={activeTab === "Code"}>
+        <TabContent active={activeTab === "Code"} padding="0">
           <CodeBlock>{code}</CodeBlock>
         </TabContent>
       </ScreenContent>

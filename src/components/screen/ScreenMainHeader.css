@@ -4,9 +4,24 @@
   width: 100%;
 }
 
+.screen-main-header-nav-toggle {
+  align-items: center;
+  background: var(--color-border-neutral);
+  border: 0;
+  border-radius: 50%;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  height: 2.25rem;
+  justify-content: center;
+  margin: 1rem 0 0 2rem;
+  width: 2.25rem;
+}
+
 .screen-main-header > .screen-content {
   padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .screen-main-header .tab-group {

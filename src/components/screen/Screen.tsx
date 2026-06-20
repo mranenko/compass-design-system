@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ScreenFooter } from "./ScreenFooter";
 import { ScreenHeader } from "./ScreenHeader";
 import { ScreenSideNav } from "./ScreenSideNav";
+import { ScreenSideNavProvider } from "./ScreenSideNavContext";
 import "./Screen.css";
 
 interface ScreenProps {
@@ -15,19 +16,21 @@ const Screen = ({ children, className = "" }: ScreenProps) => {
   }, []);
 
   return (
-    <div className={`screen ${className}`}>
-      <ScreenHeader />
+    <ScreenSideNavProvider>
+      <div className={`screen ${className}`}>
+        <ScreenHeader />
 
-      <div className="screen-body">
-        <ScreenSideNav />
+        <div className="screen-body">
+          <ScreenSideNav />
 
-        <main className="screen-main">
-          {children}
-        </main>
+          <main className="screen-main">
+            {children}
+          </main>
+        </div>
+
+        <ScreenFooter />
       </div>
-
-      <ScreenFooter />
-    </div>
+    </ScreenSideNavProvider>
   );
 };
 
