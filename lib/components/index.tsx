@@ -1,6 +1,8 @@
 import { Breadcrumbs } from "./breadcrumbs/Breadcrumbs";
 import { Button } from "./button/Button";
 import { Card } from "./card/Card";
+import { CardContent } from "./card/CardContent";
+import { CardImage } from "./card/CardImage";
 import { Chip } from "./chip/Chip";
 import { Input } from "./input/Input";
 import { Notification } from "./notification/Notification";
@@ -14,6 +16,8 @@ export {
   Breadcrumbs,
   Button,
   Card,
+  CardContent,
+  CardImage,
   Chip,
   Input,
   Notification,

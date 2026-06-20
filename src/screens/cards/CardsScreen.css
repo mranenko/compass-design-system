@@ -1,2 +1,14 @@
-.cards-screen {
+.cards-screen-grid {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 50rem) {
+  .cards-screen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
 }

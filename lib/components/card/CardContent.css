@@ -1,9 +1,8 @@
-.screen-content {
+.card-content {
   align-items: start;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  max-width: 75rem;
-  padding: 2rem 2.5rem;
+  padding: 1rem 1.5rem;
   width: 100%;
 }

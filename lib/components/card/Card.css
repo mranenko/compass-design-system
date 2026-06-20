@@ -1,10 +1,11 @@
 .card {
-  background: var(--color-background-neutral-light);
+  align-items: start;
   border: 1px solid var(--color-border-neutral);
   border-radius: 1rem;
   color: var(--color-foreground-default);
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  padding: 1.5rem;
+  justify-content: start;
+  overflow: hidden;
+  width: 100%;
 }

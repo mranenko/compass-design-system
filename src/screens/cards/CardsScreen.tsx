@@ -1,6 +1,8 @@
 import {
   Breadcrumbs,
   Card,
+  CardContent,
+  CardImage,
   Stack,
 } from "@lib/components";
 import {
@@ -17,16 +19,28 @@ const CardsScreen = () => {
 
         <h1>Cards</h1>
 
-        <Stack direction="row" gap="1">
-          <Card>
-            <h3>Card title</h3>
-            <p>Cards group related content and actions in a single container.</p>
-          </Card>
-          <Card>
-            <h3>Another card</h3>
-            <p>Use them to build dashboards, lists, and detail layouts.</p>
-          </Card>
-        </Stack>
+        <div className="cards-screen-grid">
+          <Stack gap="1">
+            <Card>
+              <CardContent>
+                <h3>Default card</h3>
+                <p>Cards group related content and actions in a single container.</p>
+              </CardContent>
+            </Card>
+          </Stack>
+
+          <Stack gap="1">
+            <Card>
+              <CardImage>
+                <img alt="placeholder image" src="/assets/images/placeholder/01.png" />
+              </CardImage>
+              <CardContent>
+                <h3>Card with image</h3>
+                <p>Cards group related content and actions in a single container.</p>
+              </CardContent>
+            </Card>
+          </Stack>
+        </div>
       </ScreenContent>
     </Screen>
   );
