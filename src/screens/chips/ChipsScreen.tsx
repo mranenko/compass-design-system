@@ -18,9 +18,12 @@ const ChipsScreen = () => {
         <h1>Chips</h1>
 
         <Stack direction="row" gap="0375">
-          <Chip>One</Chip>
-          <Chip>Two</Chip>
-          <Chip>Three</Chip>
+          <Chip>Default</Chip>
+          <Chip color="primary">Primary</Chip>
+          <Chip color="secondary">Secondary</Chip>
+          <Chip color="danger">Danger</Chip>
+          <Chip color="success">Success</Chip>
+          <Chip color="info">Info</Chip>
         </Stack>
       </ScreenContent>
     </Screen>

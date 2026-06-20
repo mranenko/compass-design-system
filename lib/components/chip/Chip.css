@@ -1,9 +1,28 @@
 .chip {
+  align-items: center;
   background: var(--color-background-neutral-dark);
   border-radius: 1rem;
   color: var(--color-foreground-strong);
   display: inline-flex;
-  font-size: var(--font-size-small);
-  height: 2rem;
+  font-size: var(--font-size-caption);
+  height: 1.75rem;
+  justify-content: center;
+  letter-spacing: var(--letter-spacing-caption);
   padding: .25rem .75rem;
+  text-transform: uppercase;
 }
+
+/* colour variants fill with the colour and use contrast text */
+.chip.color-primary,
+.chip.color-secondary,
+.chip.color-danger,
+.chip.color-success,
+.chip.color-info {
+  color: var(--color-foreground-contrast-strong);
+}
+
+.chip.color-primary { background: var(--color-primary); }
+.chip.color-secondary { background: var(--color-secondary); color: var(--color-foreground-strong); }
+.chip.color-danger { background: var(--color-danger); }
+.chip.color-success { background: var(--color-success); }
+.chip.color-info { background: var(--color-info); }

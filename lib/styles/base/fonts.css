@@ -14,4 +14,7 @@
   --letter-spacing-regular: 2%;
 
   --font-size-small: .875rem;
+
+  --font-size-caption: .75rem;
+  --letter-spacing-caption: 6%;
 }
