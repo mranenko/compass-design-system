@@ -1,3 +1,4 @@
+import { CodeBlock } from "./code-block/CodeBlock";
 import { Screen } from "./screen/Screen";
 import { ScreenContent } from "./screen/ScreenContent";
 import { ScreenFooter } from "./screen/ScreenFooter";
@@ -6,6 +7,7 @@ import { ScreenMainHeader } from "./screen/ScreenMainHeader";
 import { ScreenSideNav } from "./screen/ScreenSideNav";
 
 export {
+  CodeBlock,
   Screen,
   ScreenContent,
   ScreenFooter,

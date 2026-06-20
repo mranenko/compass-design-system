@@ -3,3 +3,12 @@
   color: inherit;
   width: 100%;
 }
+
+.screen-main-header > .screen-content {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.screen-main-header .tab-group {
+  margin: 1rem -.75rem -2rem;
+}

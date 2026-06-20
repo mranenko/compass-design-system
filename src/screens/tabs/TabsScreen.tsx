@@ -1,11 +1,13 @@
 import { useState } from "react";
 import {
   Breadcrumbs,
+  Stack,
   Tab,
   TabContent,
   TabGroup,
 } from "@lib/components";
 import {
+  CodeBlock,
   Screen,
   ScreenContent,
   ScreenMainHeader,
@@ -18,36 +20,75 @@ const tabs = [
   { label: "Settings", content: "Settings content goes here." },
 ];
 
+const code = `const [activeTab, setActiveTab] = useState("Overview");
+
+<TabGroup>
+  {tabs.map((tab) => (
+    <Tab
+      key={tab.label}
+      active={tab.label === activeTab}
+      onClick={() => setActiveTab(tab.label)}
+    >
+      {tab.label}
+    </Tab>
+  ))}
+</TabGroup>
+
+{tabs.map((tab) => (
+  <TabContent key={tab.label} active={tab.label === activeTab}>
+    {tab.content}
+  </TabContent>
+))}`;
+
 const TabsScreen = () => {
-  const [activeTab, setActiveTab] = useState(tabs[0].label);
+  const [activeTab, setActiveTab] = useState("Examples");
+  const [activeDemoTab, setActiveDemoTab] = useState(tabs[0].label);
 
   return (
     <Screen className="tabs-screen">
       <ScreenMainHeader>
-        <ScreenContent gap="05">
+        <ScreenContent gap="1">
           <Breadcrumbs items={[{ label: "Components" }, { label: "Tabs" }]} />
-          <h1>Tabs</h1>
+          <Stack gap="0125">
+            <h1>Tabs</h1>
+            <p>Switch between related views within the same context.</p>
+          </Stack>
+
+          <TabGroup>
+            <Tab active={activeTab === "Examples"} onClick={() => setActiveTab("Examples")}>
+              Examples
+            </Tab>
+            <Tab active={activeTab === "Code"} onClick={() => setActiveTab("Code")}>
+              Code
+            </Tab>
+          </TabGroup>
         </ScreenContent>
       </ScreenMainHeader>
 
       <ScreenContent>
-        <TabGroup>
-          {tabs.map((tab) => (
-            <Tab
-              key={tab.label}
-              active={tab.label === activeTab}
-              onClick={() => setActiveTab(tab.label)}
-            >
-              {tab.label}
-            </Tab>
-          ))}
-        </TabGroup>
+        <TabContent active={activeTab === "Examples"}>
+          <TabGroup>
+            {tabs.map((tab) => (
+              <Tab
+                key={tab.label}
+                active={tab.label === activeDemoTab}
+                onClick={() => setActiveDemoTab(tab.label)}
+              >
+                {tab.label}
+              </Tab>
+            ))}
+          </TabGroup>
 
-        {tabs.map((tab) => (
-          <TabContent key={tab.label} active={tab.label === activeTab}>
-            {tab.content}
-          </TabContent>
-        ))}
+          {tabs.map((tab) => (
+            <TabContent key={tab.label} active={tab.label === activeDemoTab}>
+              {tab.content}
+            </TabContent>
+          ))}
+        </TabContent>
+
+        <TabContent active={activeTab === "Code"}>
+          <CodeBlock>{code}</CodeBlock>
+        </TabContent>
       </ScreenContent>
     </Screen>
   );

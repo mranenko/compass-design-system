@@ -1,2 +1,26 @@
-.dashboard-screen {
+.dashboard-screen-component-card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  width: 100%;
+}
+
+.dashboard-gallery-link {
+  color: inherit;
+  display: flex;
+  text-decoration: none;
+}
+
+.dashboard-gallery-card {
+  height: 100%;
+  transition: border-color .15s ease;
+}
+
+.dashboard-gallery-link:hover .dashboard-gallery-card {
+  border-color: var(--color-primary);
+}
+
+.dashboard-gallery-card p {
+  color: var(--color-foreground-subtle);
+  font-size: var(--font-size-small);
 }
