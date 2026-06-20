@@ -6,17 +6,21 @@ import {
 import {
   Screen,
   ScreenContent,
+  ScreenMainHeader,
 } from "@src/components";
 import "./ChipsScreen.css";
 
 const ChipsScreen = () => {
   return (
     <Screen className="chips-screen">
+      <ScreenMainHeader>
+        <ScreenContent gap="05">
+          <Breadcrumbs items={[{ label: "Components" }, { label: "Chips" }]} />
+          <h1>Chips</h1>
+        </ScreenContent>
+      </ScreenMainHeader>
+
       <ScreenContent>
-        <Breadcrumbs items={[{ label: "Components" }, { label: "Chips" }]} />
-
-        <h1>Chips</h1>
-
         <Stack direction="row" gap="0375">
           <Chip>Default</Chip>
           <Chip color="primary">Primary</Chip>

@@ -6,18 +6,22 @@ import {
 import {
   Screen,
   ScreenContent,
+  ScreenMainHeader,
 } from "@src/components";
 import "./NotificationsScreen.css";
 
 const NotificationsScreen = () => {
   return (
     <Screen className="notifications-screen">
+      <ScreenMainHeader>
+        <ScreenContent gap="05">
+          <Breadcrumbs items={[{ label: "Components" }, { label: "Notifications" }]} />
+          <h1>Notifications</h1>
+        </ScreenContent>
+      </ScreenMainHeader>
+
       <ScreenContent>
-        <Breadcrumbs items={[{ label: "Components" }, { label: "Notifications" }]} />
-
-        <h1>Notifications</h1>
-
-        <Stack direction="column" gap="1">
+        <Stack direction="column" gap="1" width="full">
           <Notification title="Heads up">
             A default notification uses a neutral border.
           </Notification>

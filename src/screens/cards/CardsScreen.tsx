@@ -8,17 +8,21 @@ import {
 import {
   Screen,
   ScreenContent,
+  ScreenMainHeader,
 } from "@src/components";
 import "./CardsScreen.css";
 
 const CardsScreen = () => {
   return (
     <Screen className="cards-screen">
+      <ScreenMainHeader>
+        <ScreenContent gap="05">
+          <Breadcrumbs items={[{ label: "Components" }, { label: "Cards" }]} />
+          <h1>Cards</h1>
+        </ScreenContent>
+      </ScreenMainHeader>
+
       <ScreenContent>
-        <Breadcrumbs items={[{ label: "Components" }, { label: "Cards" }]} />
-
-        <h1>Cards</h1>
-
         <div className="cards-screen-grid">
           <Stack gap="1">
             <Card>

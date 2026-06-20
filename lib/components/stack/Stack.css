@@ -35,3 +35,5 @@
 .stack.justify-space-between { justify-content: space-between; }
 .stack.justify-start { justify-content: start; }
 .stack.justify-stretch { justify-content: stretch; }
+
+.stack.width-full { width: 100%; }

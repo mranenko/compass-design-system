@@ -8,6 +8,9 @@ import { Input } from "./input/Input";
 import { Notification } from "./notification/Notification";
 import { Select } from "./select/Select";
 import { Stack } from "./stack/Stack";
+import { Tab } from "./tabs/Tab";
+import { TabContent } from "./tabs/TabContent";
+import { TabGroup } from "./tabs/TabGroup";
 import { ThemeModeToggle } from "./theme/ThemeModeToggle";
 import { ThemeSelect } from "./theme/ThemeSelect";
 import { Toggle } from "./toggle/Toggle";
@@ -23,6 +26,9 @@ export {
   Notification,
   Select,
   Stack,
+  Tab,
+  TabContent,
+  TabGroup,
   ThemeModeToggle,
   ThemeSelect,
   Toggle,

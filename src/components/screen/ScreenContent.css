@@ -7,3 +7,19 @@
   padding: 2rem 2.5rem;
   width: 100%;
 }
+
+.screen-content.gap-0125 { gap: .125rem; } /* 2px */
+.screen-content.gap-025 { gap: .25rem; } /* 4px */
+.screen-content.gap-0375 { gap: .375rem; } /* 6px */
+.screen-content.gap-05 { gap: .5rem; } /* 8px */
+.screen-content.gap-0625 { gap: .625rem; } /* 10px */
+.screen-content.gap-075 { gap: .75rem; } /* 12px */
+.screen-content.gap-075 { gap: .875rem; } /* 14px */
+.screen-content.gap-1 { gap: 1rem; } /* 16px */
+.screen-content.gap-1125 { gap: 1.125rem; } /* 18px */
+.screen-content.gap-125 { gap: 1.25rem; } /* 20px */
+.screen-content.gap-15 { gap: 1.5rem; } /* 24px */
+.screen-content.gap-175 { gap: 1.75rem; } /* 28px */
+.screen-content.gap-2 { gap: 2rem; } /* 32px */
+.screen-content.gap-225 { gap: 2.25rem; } /* 36px */
+.screen-content.gap-25 { gap: 2.5rem; } /* 40px */

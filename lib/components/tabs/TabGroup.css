@@ -1,0 +1,5 @@
+.tab-group {
+  border-bottom: 1px solid var(--color-border-neutral);
+  display: flex;
+  width: 100%;
+}
