@@ -1,0 +1,53 @@
+.colour-screen-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  width: 100%;
+}
+
+.colour-screen-swatch {
+  aspect-ratio: 3 / 2;
+  border-radius: .5rem;
+  width: 100%;
+}
+
+.colour-screen-swatch--bordered {
+  border: 1px solid var(--color-border-neutral);
+}
+
+.colour-screen-name {
+  color: var(--color-foreground-strong);
+  font-size: var(--font-size-small);
+}
+
+.colour-screen-token {
+  color: var(--color-foreground-subtle);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-caption);
+}
+
+.colour-screen-scale {
+  display: grid;
+  gap: .25rem;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  width: 100%;
+}
+
+.colour-screen-scale-step {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.colour-screen-scale-swatch {
+  border-radius: .375rem;
+  min-height: 2.5rem;
+  width: 100%;
+}
+
+.colour-screen-scale-step span {
+  color: var(--color-foreground-subtle);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-caption);
+  text-align: center;
+}

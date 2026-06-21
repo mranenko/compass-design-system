@@ -5,18 +5,21 @@ import {
   ButtonsScreen,
   CardsScreen,
   ChipsScreen,
+  ColourScreen,
   DashboardScreen,
   InputsScreen,
   NotificationsScreen,
   SelectsScreen,
   TabsScreen,
   TogglesScreen,
+  TypographyScreen,
 } from "./screens";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<DashboardScreen />} />
+
       <Route path="/components/breadcrumbs" element={<BreadcrumbsScreen />} />
       <Route path="/components/buttons" element={<ButtonsScreen />} />
       <Route path="/components/cards" element={<CardsScreen />} />
@@ -27,11 +30,8 @@ const App = () => {
       <Route path="/components/tabs" element={<TabsScreen />} />
       <Route path="/components/toggles" element={<TogglesScreen />} />
 
-      {/* <Route path="/foundations" element={<FoundationsPage />} />
-      <Route path="/foundations/colors" element={<ColorsPage />} />
-      <Route path="/foundations/iconography" element={<IconographyPage />} />
-      <Route path="/foundations/tokens" element={<TokensPage />} />
-      <Route path="/foundations/typography" element={<TypographyPage />} /> */}
+      <Route path="/foundations/colour" element={<ColourScreen />} />
+      <Route path="/foundations/typography" element={<TypographyScreen />} />
 
       <Route path="*" element={<DashboardScreen />} />
     </Routes>

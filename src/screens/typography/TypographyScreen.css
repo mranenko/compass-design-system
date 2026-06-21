@@ -1,0 +1,50 @@
+.typography-screen-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  width: 100%;
+}
+
+.typography-screen-family-sample {
+  align-items: center;
+  aspect-ratio: 3 / 2;
+  background: var(--color-background-neutral-light);
+  border: 1px solid var(--color-border-neutral);
+  border-radius: .5rem;
+  color: var(--color-foreground-strong);
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.typography-screen-name {
+  color: var(--color-foreground-strong);
+  font-size: var(--font-size-small);
+}
+
+.typography-screen-token {
+  color: var(--color-foreground-subtle);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-caption);
+}
+
+.typography-screen-regular {
+  font-size: var(--font-size-regular);
+}
+
+.typography-screen-small {
+  font-size: var(--font-size-small);
+}
+
+.typography-screen-caption {
+  font-size: var(--font-size-caption);
+  letter-spacing: var(--letter-spacing-caption);
+}
+
+.typography-screen .caption {
+  color: var(--color-foreground-subtle);
+  font-size: var(--font-size-caption);
+  letter-spacing: var(--letter-spacing-caption);
+  text-transform: uppercase;
+}

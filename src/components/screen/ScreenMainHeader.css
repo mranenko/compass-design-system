@@ -1,7 +1,20 @@
 .screen-main-header {
-  background: var(--color-background-neutral-dark);
+  background-color: var(--color-background-neutral-dark);
   color: inherit;
+  isolation: isolate;
+  position: relative;
   width: 100%;
+}
+
+.screen-main-header::before {
+  background-color: var(--color-border-neutral);
+  content: "";
+  inset: 0;
+  mask: url("../../assets/images/background-street-map.svg") top right / auto no-repeat;
+  -webkit-mask: url("../../assets/images/background-street-map.svg") top right / auto no-repeat;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
 }
 
 .screen-main-header-nav-toggle {

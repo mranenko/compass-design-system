@@ -11,6 +11,11 @@ import {
 } from "@src/components";
 import "./DashboardScreen.css";
 
+const foundations = [
+  { name: "Colour", href: "/foundations/colour", description: "Semantic colour tokens that respond to theme and mode automatically." },
+  { name: "Typography", href: "/foundations/typography", description: "Type scale, font families, and text styles." },
+];
+
 const components = [
   { name: "Breadcrumbs", href: "/components/breadcrumbs", description: "Show the user's location within a navigational hierarchy." },
   { name: "Buttons", href: "/components/buttons", description: "Trigger actions with primary, secondary, and default styles." },
@@ -40,6 +45,21 @@ const DashboardScreen = () => {
       </ScreenMainHeader>
 
       <ScreenContent gap="2">
+        <h2>Foundations</h2>
+
+        <div className="dashboard-screen-component-card-grid">
+          {foundations.map((foundation) => (
+            <Link key={foundation.name} to={foundation.href} className="dashboard-gallery-link">
+              <Card className="dashboard-gallery-card">
+                <CardContent>
+                  <h3>{foundation.name}</h3>
+                  <p>{foundation.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+
         <h2>Components</h2>
 
         <div className="dashboard-screen-component-card-grid">

@@ -5,17 +5,18 @@
   --font-family-title: "Montserrat Alternates", sans-serif;
   --font-family-text: "Lexend", sans-serif;
   --font-family-mono: "Geist Mono", monospace;
-}
-
-:root {
+  
   /* regular font properties */
   --font-size-regular: 1rem;
   --font-weight-regular: 400;
   --line-height-regular: 1.62;
   --letter-spacing-regular: 2%;
 
-  --font-size-small: .875rem;
+  /* regular font properties */
+  --font-size-small: .8125rem;
+  --letter-spacing-small: 2%;
 
-  --font-size-caption: .75rem;
+  /* caption font properties */
+  --font-size-caption: .6875rem;
   --letter-spacing-caption: 6%;
 }

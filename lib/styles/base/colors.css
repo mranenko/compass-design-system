@@ -186,34 +186,36 @@
 [data-theme="tourmaline"] {
   color-scheme: light dark;
 
-  --color-background-neutral-light: light-dark(var(--color-quartz-10), var(--color-onyx-140));
-  --color-background-neutral-default: light-dark(var(--color-quartz-20), var(--color-onyx-150));
-  --color-background-neutral-dark: light-dark(var(--color-quartz-30), var(--color-onyx-160));
-  --color-border-neutral: light-dark(var(--color-quartz-40), var(--color-onyx-130));
-
-  --color-foreground-strong: light-dark(var(--color-onyx-160), var(--color-quartz-10));
-  --color-foreground-default: light-dark(var(--color-onyx-140), var(--color-quartz-30));
-  --color-foreground-subtle: light-dark(var(--color-onyx-110), var(--color-quartz-50));
-  --color-foreground-contrast-strong: light-dark(var(--color-quartz-10), var(--color-onyx-160));
-  --color-foreground-contrast-default: light-dark(var(--color-quartz-30), var(--color-onyx-140));
-  --color-foreground-contrast-subtle: light-dark(var(--color-quartz-50), var(--color-onyx-110));
+  /* primary & secondary */
+  --color-primary: light-dark(var(--color-tourmaline-140), var(--color-tourmaline-50));
+  --color-secondary: light-dark(var(--color-larimar-40), var(--color-larimar-120));
 
   /* status */
   --color-danger: light-dark(var(--color-garnet-110), var(--color-garnet-50));
   --color-success: light-dark(var(--color-emerald-140), var(--color-emerald-60));
   --color-info: light-dark(var(--color-tanzanite-120), var(--color-tanzanite-50));
 
-  /* tourmaline theme (default) */
-  --color-primary: light-dark(var(--color-tourmaline-140), var(--color-tourmaline-50));
-  --color-secondary: light-dark(var(--color-larimar-40), var(--color-larimar-120));
-}
+  /* surface */
+  --color-background-neutral-light: light-dark(var(--color-quartz-10), var(--color-onyx-140));
+  --color-background-neutral-default: light-dark(var(--color-quartz-20), var(--color-onyx-150));
+  --color-background-neutral-dark: light-dark(var(--color-quartz-30), var(--color-onyx-160));
+  --color-border-neutral: light-dark(var(--color-quartz-40), var(--color-onyx-130));
 
-/* explicit mode override flips color-scheme; light-dark() re-resolves */
-[data-mode="light"] { color-scheme: light; }
-[data-mode="dark"] { color-scheme: dark; }
+  /* foregrounds */
+  --color-foreground-strong: light-dark(var(--color-onyx-160), var(--color-quartz-10));
+  --color-foreground-default: light-dark(var(--color-onyx-140), var(--color-quartz-30));
+  --color-foreground-subtle: light-dark(var(--color-onyx-110), var(--color-quartz-50));
+  --color-foreground-contrast-strong: light-dark(var(--color-quartz-10), var(--color-onyx-160));
+  --color-foreground-contrast-default: light-dark(var(--color-quartz-30), var(--color-onyx-140));
+  --color-foreground-contrast-subtle: light-dark(var(--color-quartz-50), var(--color-onyx-110));
+}
 
 /* theme override only swaps the accent pair */
 [data-theme="amethyst"] {
   --color-primary: light-dark(var(--color-amethyst-120), var(--color-amethyst-50));
   --color-secondary: light-dark(var(--color-iolite-40), var(--color-iolite-100));
 }
+
+/* dark & light mode */
+[data-mode="light"] { color-scheme: light; }
+[data-mode="dark"] { color-scheme: dark; }

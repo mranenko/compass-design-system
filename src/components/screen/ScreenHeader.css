@@ -13,6 +13,21 @@
   z-index: 100;
 }
 
+.screen-header-brand {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+
+.screen-header-logo {
+  background-color: var(--color-primary);
+  flex-shrink: 0;
+  height: 1.75rem;
+  mask: url("/assets/images/logos/compass-logo.svg") center / contain no-repeat;
+  -webkit-mask: url("/assets/images/logos/compass-logo.svg") center / contain no-repeat;
+  width: 1.75rem;
+}
+
 @media (min-width: 36rem) {
   .screen-header {
     flex-direction: row;

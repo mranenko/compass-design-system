@@ -41,7 +41,16 @@
 }
 
 .screen-side-nav-section-title {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
   font-size: var(--font-size-small);
+  gap: .5rem;
   margin: 1rem 0 .25rem;
   text-transform: uppercase;
+}
+
+.screen-side-nav-section-title > .icon {
+  font-size: 1rem;
+  padding: 1px 0 0;
 }

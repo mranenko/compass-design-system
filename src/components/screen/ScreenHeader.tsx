@@ -9,7 +9,8 @@ import "./ScreenHeader.css";
 const ScreenHeader = () => {
   return (
     <header className="screen-header">
-      <NavLink to="/">
+      <NavLink to="/" className="screen-header-brand">
+        <span className="screen-header-logo" aria-hidden="true" />
         <h3>Compass Design System</h3>
       </NavLink>
 

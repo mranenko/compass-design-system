@@ -1,6 +1,10 @@
+import {
+  LegoIcon,
+  PuzzlePiece,
+} from "@phosphor-icons/react";
 import { NavLink } from "react-router-dom";
-import { useScreenSideNav } from "./ScreenSideNavContext";
 import "./ScreenSideNav.css";
+import { useScreenSideNav } from "./ScreenSideNavContext";
 
 const ScreenSideNav = () => {
   const { isSideNavOpen } = useScreenSideNav();
@@ -12,7 +16,17 @@ const ScreenSideNav = () => {
     >
       <NavLink to="/" end className="screen-side-nav-link">Dashboard</NavLink>
 
-      <h6 className="screen-side-nav-section-title">Components</h6>
+      <h6 className="screen-side-nav-section-title">
+        <i className="icon"><LegoIcon weight="bold" /></i>
+        Foundations
+      </h6>
+      <NavLink to="/foundations/colour" className="screen-side-nav-link">Colour</NavLink>
+      <NavLink to="/foundations/typography" className="screen-side-nav-link">Typography</NavLink>
+
+      <h6 className="screen-side-nav-section-title">
+        <i className="icon"><PuzzlePiece weight="bold" /></i>
+        Components
+      </h6>
       <NavLink to="/components/breadcrumbs" className="screen-side-nav-link">Breadcrumbs</NavLink>
       <NavLink to="/components/buttons" className="screen-side-nav-link">Buttons</NavLink>
       <NavLink to="/components/cards" className="screen-side-nav-link">Cards</NavLink>
