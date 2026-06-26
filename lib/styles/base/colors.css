@@ -187,8 +187,10 @@
   color-scheme: light dark;
 
   /* primary & secondary */
-  --color-primary: light-dark(var(--color-tourmaline-140), var(--color-tourmaline-50));
-  --color-secondary: light-dark(var(--color-larimar-40), var(--color-larimar-120));
+  --color-primary: light-dark(var(--color-tourmaline-130), var(--color-tourmaline-50));
+  --color-primary-dark: light-dark(var(--color-tourmaline-140), var(--color-tourmaline-60));
+  --color-secondary: light-dark(var(--color-larimar-40), var(--color-larimar-130));
+  --color-secondary-dark: light-dark(var(--color-larimar-50), var(--color-larimar-140));
 
   /* status */
   --color-danger: light-dark(var(--color-garnet-110), var(--color-garnet-50));
@@ -213,7 +215,9 @@
 /* theme override only swaps the accent pair */
 [data-theme="amethyst"] {
   --color-primary: light-dark(var(--color-amethyst-120), var(--color-amethyst-50));
-  --color-secondary: light-dark(var(--color-iolite-40), var(--color-iolite-100));
+  --color-primary-dark: light-dark(var(--color-amethyst-130), var(--color-amethyst-60));
+  --color-secondary: light-dark(var(--color-iolite-40), var(--color-iolite-110));
+  --color-secondary-dark: light-dark(var(--color-iolite-50), var(--color-iolite-120));
 }
 
 /* dark & light mode */

@@ -1,6 +1,6 @@
 .card {
   align-items: start;
-  border: 1px solid var(--color-border-neutral);
+  border: 1.5px solid var(--color-border-neutral);
   border-radius: 1rem;
   color: var(--color-foreground-default);
   display: flex;

@@ -12,12 +12,13 @@
 }
 
 .dashboard-gallery-card {
+  background: var(--color-background-neutral-dark);
   height: 100%;
   transition: border-color .15s ease;
 }
 
 .dashboard-gallery-link:hover .dashboard-gallery-card {
-  border-color: var(--color-primary);
+  border-color: var(--color-primary-dark);
 }
 
 .dashboard-gallery-card p {
